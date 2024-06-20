@@ -1,0 +1,24 @@
+<%- include("partials/header.ejs") %>
+<br><br>
+
+<h1>My Blog</h1><br>
+
+<% if (blogs.length > 0) { %>
+    <% blogs.forEach(function(blog) { %>
+        <div class="index">
+            <h3><a href="/post/<%= blog.title %>"><%= blog.title %></a></h3>
+            <p><%= blog.desc %></p>
+            <p>Author: <%= blog.author %></p>
+            <form action="/edit/<%= encodeURIComponent(blog.title) %>" method="get" style="display:inline;">
+                <button id="b1" type="submit">Edit</button>
+            </form>
+            <form action="/delete/<%= encodeURIComponent(blog.title) %>" method="post" style="display:inline;">
+                <button id="b2" type="submit">Delete</button>
+            </form>
+        </div>
+    <% }); %>
+<% } else { %>
+    <p style="margin-left: 80px;">There's nothing here</p>
+<% } %>
+
+<%- include("partials/footer.ejs") %>

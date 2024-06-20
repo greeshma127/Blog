@@ -1,0 +1,15 @@
+<%- include("partials/header.ejs") %>
+
+<br><br>
+<h2>Edit Post</h2><br>
+<div style="margin-left: 80px;">
+ <form action="/edit/<%= encodeURIComponent(blog.title) %>" method="post">
+   <label>Title:</label>
+    <input type="text" name="title" value="<%= blog.title %>" style="width: 400px; height: 40px;"><br><br>
+    <label>Text:</label>
+    <textarea name="content" rows="10" cols="60"><%= blog.desc %></textarea><br><br>
+    <input type="submit" value="Edit" style="margin-left: 385px;">
+ </form>
+</div>
+
+<%- include("partials/footer.ejs") %>

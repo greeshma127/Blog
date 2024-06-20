@@ -1,0 +1,13 @@
+<%- include("partials/header.ejs") %>
+
+<br><br>
+<h4><%= blog.title %></h4>
+<div class="see_post">
+    <p><%= blog.desc %></p><br>
+    <p>Author: <%= blog.author %></p>
+</div>
+<form method="get" action="/">
+    <button id="b3">Back to Home</button>
+</form>
+
+<%- include("partials/footer.ejs") %>

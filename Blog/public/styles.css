@@ -1,0 +1,108 @@
+body{
+    background-color: #AF47D2;
+}
+
+header{
+    background-color: #26355D;
+    font-size: 20px;
+}
+
+
+h1{
+    margin-left: 100px;
+    font-family:"Oswald";
+}
+
+.container{
+    margin-left: -30;
+}
+
+p{
+    margin-left: 30px;
+}
+
+h3 a{
+    margin-left: 30px;
+    color: black;
+    font-family: "Raleway";
+}
+
+a{
+    margin-left: 25px;
+}
+
+div{
+    margin-left: 80px; 
+    margin-bottom: 20px;
+}
+
+form{
+    margin-left: 60px;
+}
+
+.abt p{
+    margin-left: 20px;
+}
+
+.see_post{
+    background-color: white;
+    border-radius: 20px;
+    width: 45%;
+    padding: 15px;
+    margin-left: 100px;
+}
+
+.see_post p{
+    margin-left: 25px;
+    margin-right: 80px;
+    font-size: 18px;
+}
+
+@media (max-width:480px){
+    div{
+        margin-left: 0;
+    }
+}
+
+button{
+    border: none;
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#b1{
+    background-color: blue;
+    color: white;
+}
+
+#b2{
+    background-color: red;
+    color: white;
+}
+
+.index{
+    background-color: white;
+    margin-right: 100px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+label{
+    margin-left: -70px;
+}
+
+h2,h4{
+    margin-left: 100px;
+}
+
+h4{
+    font-family: "Raleway";
+}
+
+#b3{
+    height: 40px;
+    width: 150px;
+    background-color: #FFDB00;
+    margin-left: 40px;
+}
